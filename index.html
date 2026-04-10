@@ -2,7 +2,9 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mariage</title>
+
   <style>
     html, body {
       margin: 0;
@@ -17,9 +19,16 @@
       height: 100vh;
       border: none;
     }
+
+    /* téléphone */
+    @media (max-width: 768px) {
+      iframe {
+        content: url("mariage.pdf#zoom=200");
+      }
+    }
   </style>
 </head>
 <body>
-  <iframe src="mariage.pdf#zoom=100"></iframe>
+  <iframe id="pdf" src="mariage.pdf#zoom=100"></iframe>
 </body>
 </html>
